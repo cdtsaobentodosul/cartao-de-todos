@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Cartão de Descontos - Sua Unidade</title>
+  <title>Cartão de Descontos - Unidade São Bento do Sul</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root {
@@ -72,17 +72,9 @@
       gap: 10px;
     }
 
-    .nav-logo-icon {
-      width: 40px;
+    .nav-logo-img {
       height: 40px;
-      border-radius: 12px;
-      background: var(--primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: 700;
-      font-size: 20px;
+      width: auto;
     }
 
     .nav-logo-text {
@@ -156,10 +148,6 @@
 
     .btn-outline:hover {
       background: rgba(255,255,255,0.12);
-    }
-
-    .nav-cta {
-      display: none;
     }
 
     .hamburger {
@@ -484,33 +472,6 @@
       background: white;
     }
 
-    .partners-toolbar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-      margin-bottom: 18px;
-      font-size: 13px;
-    }
-
-    .partners-toolbar input,
-    .partners-toolbar select {
-      padding: 8px 10px;
-      border-radius: var(--radius-full);
-      border: 1px solid #e0e4f0;
-      font: inherit;
-      min-width: 160px;
-    }
-
-    .partners-toolbar button {
-      border-radius: var(--radius-full);
-      border: 1px dashed #d2d7e5;
-      background: #f5f7fb;
-      padding: 8px 16px;
-      font-size: 13px;
-      cursor: pointer;
-    }
-
     .partners-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -833,10 +794,6 @@
         display: flex;
       }
 
-      .nav-cta {
-        display: inline-flex;
-      }
-
       .hamburger {
         display: flex;
       }
@@ -856,27 +813,44 @@
   <header class="navbar">
     <div class="container navbar-inner">
       <div class="nav-logo">
-        <div class="nav-logo-icon">T</div>
+        <!-- salve sua logo como logo-cartaodetodos.png ou troque o src -->
+        <img
+          src="logo-cartaodetodos.png"
+          alt="Cartão de Todos"
+          class="nav-logo-img"
+        />
         <div class="nav-logo-text">
-          <strong>Cartão de Descontos</strong>
+          <strong>Cartão de Todos</strong>
           <span>Unidade São Bento do Sul</span>
         </div>
       </div>
 
       <nav class="nav-links" id="nav-links">
         <a data-scroll="#inicio">Início</a>
-        <a data-scroll="#beneficios">Benefícios</a>
-        <a data-scroll="#parceiros">Parceiros</a>
-        <a data-scroll="#contato">Contato</a>
-        <a data-scroll="#faq">FAQ</a>
-        <button class="btn btn-primary nav-cta" data-scroll="#lead">
+
+        <a
+          href="https://www.cartaodetodos.com.br/beneficios/"
+          target="_blank"
+          rel="noopener"
+        >
+          Benefícios e parceiros
+        </a>
+
+        <a
+          href="http://wa.me/5547992556031"
+          target="_blank"
+          rel="noopener"
+        >
+          Contato / Falar no Whats
+        </a>
+
+        <button
+          class="btn btn-primary"
+          onclick="window.open('https://forms.gle/JNdNFMmSkibzgeCv6', '_blank')"
+        >
           Peça já o seu
         </button>
       </nav>
-
-      <button class="btn btn-primary nav-cta desktop-only" data-scroll="#lead">
-        Peça já o seu
-      </button>
 
       <div class="hamburger" id="hamburger">
         <span></span><span></span><span></span>
@@ -917,12 +891,15 @@
           </div>
 
           <div class="hero-cta-row">
-            <button class="btn btn-primary" data-scroll="#lead">
+            <button
+              class="btn btn-primary"
+              onclick="window.open('https://forms.gle/JNdNFMmSkibzgeCv6', '_blank')"
+            >
               Pedir meu cartão
             </button>
-            <!-- COLOQUE AQUI O LINK DO SEU WHATSAPP -->
+
             <a
-              href="https://api.whatsapp.com/send?phone=5547999999999&text=Quero%20saber%20mais%20sobre%20o%20cart%C3%A3o"
+              href="http://wa.me/5547992556031"
               target="_blank"
               rel="noopener"
               class="btn"
@@ -937,7 +914,7 @@
 
           <div class="hero-stats">
             <div class="hero-stat">
-              <strong>R$ 30,90</strong>
+              <strong>R$ 34,90</strong>
               Mensalidade para toda a família
             </div>
             <div class="hero-stat">
@@ -955,7 +932,7 @@
 
           <div class="hero-card-price">
             <span class="currency">R$</span>
-            <span class="amount">30,90</span>
+            <span class="amount">34,90</span>
             <span class="per">/ mês por família</span>
           </div>
 
@@ -964,13 +941,17 @@
           </div>
 
           <ul class="hero-card-list">
-            <li>Consultas com clínico geral a partir de R$ 30,00.</li>
-            <li>Outras especialidades médicas com valores reduzidos.</li>
+            <li>Consultas com clínico geral no valor de R$ 30,00.</li>
+            <li>Outras especialidades médicas com valor de R$ 40,00.</li>
             <li>Tratamentos odontológicos com condições especiais.</li>
             <li>Descontos em medicamentos em redes parceiras.</li>
           </ul>
 
-          <button class="btn btn-primary" data-scroll="#lead" style="width:100%;margin-top:4px;">
+          <button
+            class="btn btn-primary"
+            style="width:100%;margin-top:4px;"
+            onclick="window.open('https://forms.gle/JNdNFMmSkibzgeCv6', '_blank')"
+          >
             Quero meu cartão
           </button>
 
@@ -1048,83 +1029,87 @@
             Economize em grandes redes e comércios da sua região.
           </h2>
           <p class="section-sub">
-            Comprando nas lojas parceiras, você paga menos e ainda pode receber
-            parte do valor de volta pelo app.
+            Comprando nas lojas parceiras, você paga menos e ainda pode receber parte
+            do valor de volta pelo app.
           </p>
         </div>
 
-        <div class="partners-toolbar">
-          <div>
-            <strong>Parceiro</strong><br />
-            <input type="text" placeholder="Buscar parceiro..." />
-          </div>
-          <div>
-            <strong>Ordenar</strong><br />
-            <select>
-              <option>Alfabética</option>
-              <option>Maior desconto</option>
-              <option>Mais próximos</option>
-            </select>
-          </div>
-          <button type="button">Limpar filtros</button>
-        </div>
-
         <div class="partners-grid">
+          <!-- DROGAS RAIA -->
           <article class="partner-card">
-            <div class="partner-logo">DR</div>
-            <div class="partner-name">Rede de Farmácias</div>
+            <div class="partner-logo">
+              <!-- Troque por <img src="logo-drogas-raia.png" alt="Drogas Raia"> se quiser -->
+              DR
+            </div>
+            <div class="partner-name">Drogas Raia</div>
             <div class="partner-offer">
               Até 35% de desconto em medicamentos
             </div>
             <div class="partner-distance">Próximo a você</div>
             <div class="partner-actions">
               <span>Desconto direto no balcão.</span>
-              <button class="btn btn-primary" data-scroll="#lead">
+              <button class="btn btn-primary"
+                onclick="window.open('https://forms.gle/JNdNFMmSkibzgeCv6', '_blank')">
                 Pedir cartão
               </button>
             </div>
           </article>
 
+          <!-- ULTRAGAZ 12% -->
           <article class="partner-card">
-            <div class="partner-logo">GAZ</div>
-            <div class="partner-name">Distribuidora de Gás</div>
+            <div class="partner-logo">
+              <!-- <img src="logo-ultragaz.png" alt="Ultragaz"> -->
+              UGZ
+            </div>
+            <div class="partner-name">Ultragaz</div>
             <div class="partner-offer">
-              9% de desconto no gás de cozinha
+              12% de desconto no gás de cozinha
             </div>
             <div class="partner-distance">Entrega na sua região</div>
             <div class="partner-actions">
               <span>Pague menos no dia a dia.</span>
-              <button class="btn btn-primary" data-scroll="#lead">
+              <button class="btn btn-primary"
+                onclick="window.open('https://forms.gle/JNdNFMmSkibzgeCv6', '_blank')">
                 Quero desconto
               </button>
             </div>
           </article>
 
+          <!-- LOJA DE ROUPAS 12% CASHBACK -->
           <article class="partner-card">
-            <div class="partner-logo">MODA</div>
+            <div class="partner-logo">
+              <!-- <img src="logo-roupas.png" alt="Loja de Roupas"> -->
+              👕
+            </div>
             <div class="partner-name">Loja de Roupas</div>
             <div class="partner-offer">
-              Até 10% de cashback em compras
+              Até 12% de cashback em compras
             </div>
-            <div class="partner-distance">Centro da cidade</div>
+            <div class="partner-distance">Compras pelo app</div>
             <div class="partner-actions">
               <span>Cashback pelo app.</span>
-              <button class="btn btn-primary" data-scroll="#lead">
+              <button class="btn btn-primary"
+                onclick="window.open('https://forms.gle/JNdNFMmSkibzgeCv6', '_blank')">
                 Ver condições
               </button>
             </div>
           </article>
 
+          <!-- POSTOS DE COMBUSTÍVEL -->
           <article class="partner-card">
-            <div class="partner-logo">MKT</div>
-            <div class="partner-name">Mercado & Açougue</div>
-            <div class="partner-offer">
-              Cashback em compras selecionadas
+            <div class="partner-logo">
+              <!-- <img src="logo-posto.png" alt="Postos de Combustível"> -->
+              ⛽
             </div>
-            <div class="partner-distance">Bairros atendidos</div>
+            <div class="partner-name">Postos de Combustível</div>
+            <div class="partner-offer">
+              Descontos em postos selecionados
+            </div>
+            <div class="partner-distance">Postos disponíveis no app</div>
             <div class="partner-actions">
-              <span>Descontos no carrinho.</span>
-              <button class="btn btn-primary" data-scroll="#lead">
+              <span>Descontos no abastecimento.</span>
+              <button class="btn btn-primary"
+                onclick="window.open('https://forms.gle/JNdNFMmSkibzgeCv6', '_blank')">
                 Pedir cartão
               </button>
             </div>
@@ -1141,11 +1126,10 @@
             Clínicas parceiras
           </div>
           <h2 class="section-title" style="text-align:left;margin-bottom:4px;">
-            As melhores clínicas para sua família.
+            A melhor rede de clínicas para sua família.
           </h2>
           <p class="section-sub" style="text-align:left;margin:0;">
-            Parceiros selecionados para oferecer atendimento de qualidade com
-            preços especiais para quem tem o cartão.
+            Clínica AmorSaúde oferece atendimento de qualidade com preços especiais para quem tem o cartão.
           </p>
           <ul class="bullet-list">
             <li>Agendamento rápido e sem burocracia.</li>
@@ -1154,11 +1138,12 @@
             <li>Atendimento atento às necessidades do paciente.</li>
           </ul>
           <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;">
-            <button class="btn btn-primary" data-scroll="#lead">
+            <button class="btn btn-primary"
+              onclick="window.open('https://forms.gle/JNdNFMmSkibzgeCv6', '_blank')">
               Pedir meu cartão
             </button>
             <a
-              href="https://paciente.amorsaude.com.br/"
+              href="https://www.amorsaude.com.br/#"
               target="_blank"
               rel="noopener"
               class="btn"
@@ -1203,7 +1188,7 @@
             </p>
           </div>
           <a
-            href="https://api.whatsapp.com/send?phone=5547999999999&text=Ol%C3%A1,%20quero%20informações%20sobre%20o%20cart%C3%A3o%20de%20descontos."
+            href="http://wa.me/5547992556031"
             target="_blank"
             rel="noopener"
             class="btn btn-outline"
@@ -1228,7 +1213,7 @@
           </p>
 
           <ul class="bullet-list">
-            <li>Apenas R$ 30,90 por mês para toda a família.</li>
+            <li>Apenas R$ 34,90 por mês para toda a família.</li>
             <li>Inclua cônjuge e filhos como dependentes.</li>
             <li>Pagamento no cartão de crédito ou na conta de luz.</li>
             <li>Sem limite de consultas pela rede parceira.</li>
@@ -1255,7 +1240,7 @@
               <input
                 id="telefone"
                 type="tel"
-                placeholder="(47) 9 9999-9999"
+                placeholder="(47) 9 9255-6031"
                 required
               />
             </div>
@@ -1352,7 +1337,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <div class="footer-brand-title">
-            Cartão de Descontos – Unidade São Bento do Sul
+            Cartão de Todos – Unidade São Bento do Sul
           </div>
           <p>
             Cuidar da saúde da sua família não precisa ser caro. Conte com nossa
@@ -1365,7 +1350,7 @@
           <p>São Bento do Sul – SC</p>
           <br />
           <p><strong>Telefone:</strong> (47) 0000-0000</p>
-          <p><strong>WhatsApp:</strong> (47) 9 9999-9999</p>
+          <p><strong>WhatsApp:</strong> (47) 9 9255-6031</p>
         </div>
       </div>
 
@@ -1380,7 +1365,7 @@
   </footer>
 
   <script>
-    // Scroll suave
+    // Scroll suave para elementos com data-scroll
     document.querySelectorAll("[data-scroll]").forEach(function (el) {
       el.addEventListener("click", function () {
         var target = document.querySelector(this.getAttribute("data-scroll"));
@@ -1390,7 +1375,6 @@
             behavior: "smooth",
           });
         }
-        // fechar menu em mobile
         navLinks.classList.remove("open");
       });
     });
