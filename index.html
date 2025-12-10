@@ -1,103 +1,105 @@
-<!-- Estrutura base do site reconstruído. Conteúdo será preenchido. -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Franquia Cartão de TODOS – São Bento do Sul</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  body { margin:0; font-family: Inter, sans-serif; background:#fff; color:#1a1a1a; }
-  header { position:fixed; top:0; left:0; width:100%; background:#fff; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,0.08); z-index:100; }
-  .container { max-width:1200px; margin:0 auto; padding:20px; }
-  section { padding:80px 0; }
-  .hero { display:flex; gap:40px; align-items:center; }
-  .hero h1 { font-size:42px; font-weight:700; }
-  .hero img { max-width:420px; border-radius:20px; }
-</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        /* CABEÇALHO */
+        header {
+            width: 100%;
+            background: #ffffff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header img {
+            height: 60px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* HERO */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 80px 20px;
+            background: #ffffff;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #222;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #444;
+            max-width: 600px;
+        }
+
+        .btn {
+            margin-top: 30px;
+            padding: 15px 30px;
+            background: #ff6600;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <div class="container header-inner">
-      <div class="logo-area">
-        <img src="assets/logo-positivo.webp" alt="Logo Cartão de TODOS" height="46" />
-      </div>
+    <!-- CABEÇALHO -->
+    <header>
+        <img src="tata.png" alt="Logo" />
 
-      <nav class="menu">
-        <a href="#sonhos">Cartão de TODOS Sonhos</a>
-        <a href="#clinicas">Clínicas</a>
-        <a href="#parceiros">Parceiros</a>
-        <a href="#depoimentos">Depoimentos</a>
-        <a href="#faq">FAQ</a>
-      </nav>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      <a class="btn-header" href="#cta">Peça seu cartão</a>
-    </div>
-  </header>
-
-  <style>
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background: #ffffff;
-      padding: 12px 0;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      z-index: 200;
-    }
-
-    .header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-    }
-
-    .menu {
-      display: flex;
-      gap: 30px;
-    }
-
-    .menu a {
-      text-decoration: none;
-      font-weight: 500;
-      color: #00644b;
-      font-size: 16px;
-      transition: 0.2s;
-    }
-
-    .menu a:hover {
-      color: #00a66c;
-    }
-
-    .btn-header {
-      background: #ff7a00;
-      padding: 10px 22px;
-      color: #fff;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      box-shadow: 0 3px 6px rgba(255,122,0,0.3);
-      transition: 0.2s;
-    }
-
-    .btn-header:hover {
-      background: #e96d00;
-    }
-  </style>
-
-  <section class="hero container">
-    <div>
-      <h1>Bem-vindo ao Cartão de TODOS – São Bento do Sul</h1>
-      <p style="font-size:20px; margin-top:10px;">Sua saúde com o menor preço do Brasil.</p>
-    </div>
-    <img src="assets/tata.png" alt="Tata">
-  </section>
-
-  <!-- Outras seções serão adicionadas conforme sua confirmação -->
-
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Bem-vindo ao site</h1>
+        <p>Seja muito bem-vindo! Aqui você encontra tudo o que precisa em um só lugar.</p>
+        <a class="btn" href="#">Saiba mais</a>
+    </section>
 </body>
 </html>
